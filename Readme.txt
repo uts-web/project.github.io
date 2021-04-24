@@ -1,6 +1,5 @@
-Thanks for downloading this template!
+By
 
-Template Name: OnePage
-Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Moch. Apriyanto Mahaliyan
+Ardana Firmansyah
+Noval Maulana Ibrahim
