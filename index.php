@@ -21,7 +21,7 @@
 
   <title>re - Creators</title>
 
-<link href="assets/css/style.css" rel="stylesheet"></head>
+<link href="./style.css" rel="stylesheet"></head>
 
 <body> <!-- Add your content of header -->
 <header>
@@ -46,7 +46,7 @@
           <li><a href="./project.html" title="">Project</a></li>
           <li>
             <p>
-              <a href="./components.html" class="btn btn-default navbar-btn" title="">Components</a>
+              <a href="./login.html" class="btn btn-default navbar-btn" title="">Login</a>
             </p>
           </li>
 
@@ -282,7 +282,7 @@
                         <span class="fa-icon">
                           <i aria-hidden="true"></i>
                         </span>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.7465857137786!2d112.5951762147192!3d-7.921516894293756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7881f5405daac1%3A0xb39e4847109109e4!2sUniversity%20of%20Muhammadiyah%20Malang%2C%20Campus%20III!5e0!3m2!1sen!2sid!4v1619280475085!5m2!1sen!2sid" width="590" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.7465857137786!2d112.5951762147192!3d-7.921516894293756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7881f5405daac1%3A0xb39e4847109109e4!2sUniversity%20of%20Muhammadiyah%20Malang%2C%20Campus%20III!5e0!3m2!1sen!2sid!4v1619280475085!5m2!1sen!2sid" width="230" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                       </li>
                     </ul>
                   </div>
@@ -357,6 +357,6 @@
   ga('send', 'pageview');
 </script>
 
---> <script type="text/javascript" src="assets/javascript/main.js"></script></body>
+--> <script type="text/javascript" src="./main.js"></script></body>
 
 </html>
