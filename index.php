@@ -21,7 +21,7 @@
 
   <title>re - Creators</title>
 
-<link href="./style.css" rel="stylesheet"></head>
+<link href="assets/css/style.css" rel="stylesheet"></head>
 
 <body> <!-- Add your content of header -->
 <header>
@@ -357,6 +357,6 @@
   ga('send', 'pageview');
 </script>
 
---> <script type="text/javascript" src="./main.js"></script></body>
+--> <script type="text/javascript" src="assets/javascript/main.js"></script></body>
 
 </html>
