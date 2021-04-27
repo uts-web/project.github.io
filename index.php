@@ -14,7 +14,6 @@
   
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
-  <link href="" rel="stylesheet">
   <title>re - Creators</title>
 <link href="./style.css" rel="stylesheet"></head>
 <body> <!-- Add your content of header -->
