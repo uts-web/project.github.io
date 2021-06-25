@@ -44,6 +44,7 @@ class manageController extends Controller
             $image_name = $request->file('image')->store('images','public');
         }
         kategori::create([
+            'id' => $request->id,
             'title' => $request->title,
             'genre' => $request->genre,
             'content' => $request->content,
