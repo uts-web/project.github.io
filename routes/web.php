@@ -30,7 +30,7 @@ Route::get('/kategoris/add', 'kategoriController@add');
 Route::get('/komentar/add', 'komentarController@add');
 Route::get('/user/add', 'userController@add');
 
-Route::post('/kategoris/create', 'kategoriController@create');
+Route::post('/kategori/create', 'manageController@create');
 Route::post('/komentar/create', 'komentarController@create');
 Route::post('/user/create', 'userController@create');
 

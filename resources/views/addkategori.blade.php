@@ -36,6 +36,10 @@
                     <label for="trailer">Featured Trailer</label>
                     <input type="text" class="form-control" required="required" name="trailer"></br>
                 </div>
+                <div class="form-group">
+                    <label for="bukti">Bukti Pembayaran</label>
+                    <input type="text" class="form-control" required="required" name="bukti"></br>
+                </div>
                 <button type="submit" name="add" class="btn btn-primary float-right">Tambah Data</button>
             </form>     
         </div>

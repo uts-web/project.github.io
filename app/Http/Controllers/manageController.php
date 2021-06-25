@@ -49,6 +49,7 @@ class manageController extends Controller
             'content' => $request->content,
             'featured_image' => $image_name,
             'featured_trailer' => $request->trailer,
+            'Bukti_pembayaran' => $request->bukti,
         ]);
         return redirect('/manage');
     }
