@@ -48,7 +48,7 @@ class manageController extends Controller
             'title' => $request->title,
             'genre' => $request->genre,
             'content' => $request->content,
-            'featured_image' => $image_name,
+            'featured_image' => $request->image,
             'featured_trailer' => $request->trailer,
             'Bukti_pembayaran' => $request->bukti,
         ]);
