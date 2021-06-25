@@ -26,7 +26,7 @@ Route::post('/updateid', 'kategoriController@updateid');
 
 Route::get('/manage', 'manageController@index')->name('manage');
 
-Route::get('/kategoris/add', 'kategoriController@add');
+Route::get('/kategoris/add', 'manageController@add');
 Route::get('/komentar/add', 'komentarController@add');
 Route::get('/user/add', 'userController@add');
 
