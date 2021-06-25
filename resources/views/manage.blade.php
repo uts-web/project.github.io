@@ -109,9 +109,9 @@
                             <br><br>
                             <h3>List Of All Topups</h3>
                         </div>
-                        <a href="komentar/add" class="btn btn-primary">Add Data</a>
+                        <a href="topup/add" class="btn btn-primary">Add Data</a>
                         </br>
-                        <a href="/komentar/cetak_pdf" class="btn btn-warning">Cetak PDF</a>
+                        <a href="/topup/cetak_pdf" class="btn btn-warning">Cetak PDF</a>
                         <div class="card body">
                             <table class="table table-bordered table-striped">
                                 <thead>
