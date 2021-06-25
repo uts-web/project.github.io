@@ -16,6 +16,10 @@
 
             @csrf
                 <div class="form-group">
+                    <label for="id">ID</label>
+                    <input type="text" class="form-control" required="required" name="id"></br>
+                </div>
+                <div class="form-group">
                     <label for="jumlah">Jumlah Diamond</label>
                     <input type="text" class="form-control" required="required" name="jumlah"></br>
                 </div>

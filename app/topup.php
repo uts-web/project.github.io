@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class topup extends Model
 {
-    protected $fillable = ['jumlah_diamond','harga'];
+    protected $fillable = ['id','jumlah_diamond','harga'];
 }

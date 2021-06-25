@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\kategori;
 use App\User;
 use App\komentar;
+use App\topup;
 use Illuminate\Support\Facades\Gate;
 use PDF;
 class manageController extends Controller
@@ -29,8 +30,9 @@ class manageController extends Controller
     {
      $kategoris = kategori::All();
      $komentars = komentar::All();
+     $topups = topup::All();
      $users = User::all();
-    return view('manage')->with(compact('kategoris', 'users','komentars'));
+    return view('manage')->with(compact('kategoris', 'users','komentars','topups'));
     }
 
     public function add()

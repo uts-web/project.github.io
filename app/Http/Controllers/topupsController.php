@@ -29,6 +29,7 @@ class topupsController extends Controller
     public function create(Request $request)
     {
         topup::create([
+            'id' => $request->id,
             'jumlah_diamond' => $request->jumlah,
             'harga' => $request->harga,
         ]);

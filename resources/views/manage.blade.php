@@ -124,7 +124,7 @@
                                 </thead>
                                 <tbody>
                                     @php $i=1 @endphp
-                                    @foreach($komentars as $a)
+                                    @foreach($topups as $a)
                                     <tr>
                                         <td>{{ $i++ }}</td>
                                         <td>{{$a->jumlah_diamond}}</td>
