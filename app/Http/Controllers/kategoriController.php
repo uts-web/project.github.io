@@ -38,9 +38,10 @@ class kategoriController extends Controller
             $image_name = $request->file('image')->store('images', 'public');
         }
         kategori::create([
-            'name' => $request->name,
-            'content' => $request->content,
+            'title' => $request->title,
+            'genre' => $request->genre,
             'featured_image' => $image_name,
+            'feature_trailer' => $trailer_name,
         ]);
         return redirect('/manage');
     }
@@ -54,13 +55,14 @@ class kategoriController extends Controller
     public function update($id, Request $request)
     {
         $kategori = kategori::find($id);
-        $kategori->name = $request->name;
-        $kategori->content = $request->content;
+        $kategori->title = $request->title;
+        $kategori->genre = $request->genre;
         if ($kategori->featured_image && file_exists(storage_path('app/public/' . $kategori->featured_image))) {
             \Storage::delete('public/' . $kategori->featured_image);
         }
         $image_name = $request->file('img')->store('img s', 'public');
         $kategori->featured_image = $image_name;
+        $kategori->trailer_video = $trailer_name;
         $kategori->save();
         return redirect('/manage');
     }
