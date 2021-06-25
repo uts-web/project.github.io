@@ -31,7 +31,7 @@
                                     @php $i=1 @endphp
                                     @foreach($kategoris as $a)
                                     <tr>
-                                        <td>{{ i++ }}</td>
+                                        <td>{{ $i++ }}</td>
                                         <td>{{$a->title}}</td>
                                         <td>{{$a->genre}}</td>
                                         <td><img src="{{ asset('/images/'.$a->featured_image) }}"></td>
@@ -83,7 +83,7 @@
                                     @php $i=1 @endphp
                                     @foreach($komentars as $a)
                                     <tr>
-                                        <td>{{ i++ }}</td>
+                                        <td>{{ $i++ }}</td>
                                         <td>{{$a->name}}</td>
                                         <td>{{$a->content}}</td>
                                         <td><img src="{{ asset('/images/'.$a->featured_image) }}"></td>
@@ -129,7 +129,7 @@
                                     @php $i=1 @endphp
                                     @foreach($users as $a)
                                     <tr>
-                                        <td>{{ i++ }}</td>
+                                        <td>{{ $i++ }}</td>
                                         <td>{{$a->name}}</td>
                                         <td>{{$a->id_game}}</td>
                                         <td>{{$a->email}}</td>
