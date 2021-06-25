@@ -25,7 +25,7 @@
                 </div>
                 <div class="form-group">
                     <label for="harga">Harga</label>
-                    <input type="text" class="form-control" required="required" name="Harga"></br>
+                    <input type="text" class="form-control" required="required" name="harga"></br>
                 </div>
                 <button type="submit" name="add" class="btn btn-primary float-right">Tambah Data</button>
             </form>     
