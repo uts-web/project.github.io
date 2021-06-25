@@ -100,7 +100,47 @@
                     </div>
             </blockquote>
 
+            <!-- Topup -->
 
+            <blockquote>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <br><br>
+                            <h3>List Of All Topups</h3>
+                        </div>
+                        <a href="komentar/add" class="btn btn-primary">Add Data</a>
+                        </br>
+                        <a href="/komentar/cetak_pdf" class="btn btn-warning">Cetak PDF</a>
+                        <div class="card body">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Jumlah Diamond</th>
+                                        <th>Harga</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @php $i=1 @endphp
+                                    @foreach($komentars as $a)
+                                    <tr>
+                                        <td>{{ $i++ }}</td>
+                                        <td>{{$a->jumlah_diamond}}</td>
+                                        <td>{{$a->harga}}</td>
+                                        <td>{{$a->created_at}}</td>
+                                        <td>
+                                            <a href="topup/edit/{{$a->id}}" class="btn btn-warning">Edit</a>
+                                            <a href="topup/delete/{{$a->id}}" class="badge badge-danger">hapus</a>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </blockquote>
 
             <!-- user -->
             <blockquote>
