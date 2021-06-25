@@ -24,7 +24,7 @@
               </div>
               <div class="form-group">
               <label for="image">Featured Image</label>
-              <input type="file" class="form-control" required="required" name="image" value="{{$kategoris->featured_image}}"></br>
+              <input type="text" class="form-control" required="required" name="image" value="{{$kategoris->featured_image}}"></br>
               <img width="150px" src="{{$kategoris->featured_image}}">
               </div>
               <div class="form-group">
