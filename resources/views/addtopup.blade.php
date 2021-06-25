@@ -12,7 +12,7 @@
             <h3>List Of All Kategori</h3>
             </div>
             </br></br>
-            <form action="/kategori/create" method="post" enctype="multipart/form-data">
+            <form action="/topup/create" method="post" enctype="multipart/form-data">
 
             @csrf
                 <div class="form-group">
