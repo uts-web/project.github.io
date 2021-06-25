@@ -16,10 +16,6 @@
 
             @csrf
                 <div class="form-group">
-                    <label for="id">ID</label>
-                    <input type="text" class="form-control" required="required" name="id"></br>
-                </div>
-                <div class="form-group">
                     <label for="title">Judul</label>
                     <input type="text" class="form-control" required="required" name="title"></br>
                 </div>
