@@ -17,8 +17,8 @@ Route::get('', 'HomeController@index')->name('home');
 Route::get('/kategori/{id}', 'kategoriController');
 
 Auth::routes();
-Route::get('/logout', function () {
-	$logout = Auth::logout();
+Route::get('/logout' ,function(){
+	$logout=Auth::logout();
 	return view('auth.login');
 });
 
@@ -34,18 +34,18 @@ Route::post('/kategori/create', 'manageController@create');
 Route::post('/komentar/create', 'komentarController@create');
 Route::post('/user/create', 'userController@create');
 
-Route::get('/kategoris/edit/{id}', 'kategoriController@edit');
+Route::get('/kategoris/edit/{id}', 'manageController@edit');
 Route::get('/komentar/edit/{id}', 'komentarController@edit');
 Route::get('/user/edit/{id}', 'userController@edit');
 
-Route::post('/kategoris/update/{id}', 'kategoriController@update');
-Route::post('/komentar/update/{id}', 'komentarController@update');
-Route::post('/user/update/{id}', 'userController@update');
+Route::post('/kategoris/update/{id}','manageController@update');
+Route::post('/komentar/update/{id}','komentarController@update');
+Route::post('/user/update/{id}','userController@update');
 
-Route::get('/kategoris/delete/{id}', 'kategoriController@delete');
-Route::get('/komentar/delete/{id}', 'komentarController@delete');
+Route::get('/kategoris/delete/{id}','manageController@delete');
+Route::get('/komentar/delete/{id}','komentarController@delete');
 Route::get('/user/delete3/{id}', 'userController@delete3');
 
-Route::get('/kategoris/cetak_pdf', 'kategoriController@cetak_pdf');
+Route::get('/kategoris/cetak_pdf', 'manageController@cetak_pdf');
 Route::get('/komentar/cetak_pdf', 'komentarController@cetak_pdf');
 Route::get('/user/cetak_pdf', 'userController@cetak_pdf');
