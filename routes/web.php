@@ -29,29 +29,29 @@ Route::get('/manage', 'manageController@index')->name('manage');
 Route::get('/kategoris/add', 'manageController@add');
 Route::get('/komentar/add', 'komentarController@add');
 Route::get('/user/add', 'userController@add');
-Route::get('/topup/add', 'topupController@add');
+Route::get('/topup/add', 'topupsController@add');
 
 Route::post('/kategori/create', 'manageController@create');
 Route::post('/komentar/create', 'komentarController@create');
 Route::post('/user/create', 'userController@create');
-Route::post('/topup/create', 'topupController@create');
+Route::post('/topup/create', 'topupsController@create');
 
 Route::get('/kategoris/edit/{id}', 'manageController@edit');
 Route::get('/komentar/edit/{id}', 'komentarController@edit');
 Route::get('/user/edit/{id}', 'userController@edit');
-Route::get('/topup/edit/{id}', 'topupController@edit');
+Route::get('/topup/edit/{id}', 'topupsController@edit');
 
 Route::post('/kategoris/update/{id}','manageController@update');
 Route::post('/komentar/update/{id}','komentarController@update');
 Route::post('/user/update/{id}','userController@update');
-Route::post('/topup/update/{id}','topupController@update');
+Route::post('/topup/update/{id}','topupsController@update');
 
 Route::get('/kategoris/delete/{id}','manageController@delete');
 Route::get('/komentar/delete/{id}','komentarController@delete');
 Route::get('/user/delete3/{id}', 'userController@delete3');
-Route::get('/topup/delete/{id}','topupController@delete');
+Route::get('/topup/delete/{id}','topupsController@delete');
 
 Route::get('/kategoris/cetak_pdf', 'manageController@cetak_pdf');
 Route::get('/komentar/cetak_pdf', 'komentarController@cetak_pdf');
 Route::get('/user/cetak_pdf', 'userController@cetak_pdf');
-Route::get('/topup/cetak_pdf', 'topupController@cetak_pdf');
+Route::get('/topup/cetak_pdf', 'topupsController@cetak_pdf');
