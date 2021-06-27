@@ -30,11 +30,6 @@
                     <label for="roles">Roles</label>
                     <input type="text" class="form-control" required="required" name="roles" value="{{$user->roles}}"></br>
                 </div>
-                <div class="form-group">
-                    <label for="image">Featured Image</label>
-                    <input type="file" class="form-control" required="required" name="image" value="{{$user->image}}"></br>
-                    <img width="150px" src="{{asset('storage/'.$user->image)}}">
-                </div>
                 <button type="submit" name="edit" class="btn btn-primary float-right">Ubah Data</button>
             </form>
             </br></br>        
