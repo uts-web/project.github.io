@@ -56,12 +56,6 @@ class userController extends Controller
         $user->name=$request->name;
         $user->email=$request->email;
         $user->password=$request->password;
-        if($user->image && file_exists(storage_path('app/public/' . $user->image)))
-        {
-        \Storage::delete('public/'.$user->image);
-        }
-        $image_name = $request->file('image')->store('images', 'public');
-        $user->image = $image_name;
         $user->roles=$request->roles;
         $user->save();
         return redirect('/manage');
