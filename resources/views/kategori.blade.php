@@ -133,7 +133,7 @@
 						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
 					</ul>
-					&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Coverr</a>. Video: <a href="https://coverr.co">Coverr</a>.
+					Copyright &copy; 2021, All rights reserved.<a href="http://re-creators.herokuapp.com/">re - Creators</a>
 				</div>
 			
 </footer>

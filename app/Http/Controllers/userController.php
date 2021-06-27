@@ -35,6 +35,7 @@ class userController extends Controller
             $image_name = $request->file('image')->store('images','public');
         }
         user::create([
+            'id' => $request->id,
             'name' => $request->name,
             'email' => $request->email,
             'password' => $request->password,

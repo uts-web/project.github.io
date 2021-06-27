@@ -3,10 +3,10 @@
   <section id="banner" data-video="images/home1">
 					<div class="inner">
 						<header>
-							<h1>This is ASPSHOP</h1>
+							<h1>This is re - Creators</h1>
 							<p>Cara tercepat dan termudah untuk pembelian kredit permainan</p>
 						</header>
-						<a href="#main" class="button big alt scrolly">Click Untuk Mengetahui Lebih</a>
+						<a href="#main" class="button big alt scrolly">Klik Untuk Mengetahui Lebih</a>
 					</div>
 
 				</section>
@@ -52,7 +52,7 @@
     <div class="inner">
       <header>
         <h2>Kategori</h2>
-        <p>Game Mobile And PC</p>
+        <p>PC And Game Mobile</p>
       </header>
       <!-- Tabbed Video Section -->
         <div class="flex flex-tabs">

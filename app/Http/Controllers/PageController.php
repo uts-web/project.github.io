@@ -10,8 +10,7 @@ class PageController extends Controller
         return 'Selamat Datang';
     }
     public function about(){
-        return 'NIM : 201910370311226 <br> 
-               Nama : Aldhy Sidqi P.';
+        return 're - Creators';
     }
     public function articles(){
         return 'halaman artikel dengan id '.id;

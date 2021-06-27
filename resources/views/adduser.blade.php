@@ -13,8 +13,12 @@
             </br></br>
             <form action="/user/create" method="post" enctype="multipart/form-data">
             @csrf
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input type="text" class="form-control" required="required" name="id"></br>
+            </div>
                 <div class="form-group">
-                    <label for="name">name</label>
+                    <label for="name">Name</label>
                     <input type="text" class="form-control" required="required" name="name"></br>
                 </div>
                 <div class="form-group">

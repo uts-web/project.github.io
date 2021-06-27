@@ -7,5 +7,5 @@
 @endsection
 
 @section('content')
-    <p>Ini adalah bagian konten. 1931710001 - Bany faris hanafi</p>
+    <p>re - Creators</p>
 @endsection
