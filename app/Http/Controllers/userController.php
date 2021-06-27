@@ -39,7 +39,6 @@ class userController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => $request->password,
-            'image' => $image_name,
             'roles' =>$request->roles
         ]);
     return redirect('/manage');
