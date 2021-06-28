@@ -14,7 +14,7 @@ class PegawaiPelangganController extends Controller{
 
     public function index(){
         if(!PegawaiController::getPegawai()){
-            return redirect('pegawai/login');
+            return redirect('admin/login');
         }
         $pegawai = PegawaiController::getPegawai();
         $pelanggan = Pelanggan::all();
@@ -23,7 +23,7 @@ class PegawaiPelangganController extends Controller{
 
     public function create(){
         if(!PegawaiController::getPegawai()){
-            return redirect('pegawai/login');
+            return redirect('admin/login');
         }
         $pegawai = PegawaiController::getPegawai();
         return view('pegawai.pelanggan.create', compact('pegawai'));
@@ -48,7 +48,7 @@ class PegawaiPelangganController extends Controller{
         ];
 
         Pelanggan::insert($data);
-        return redirect('pegawai/pelanggan');
+        return redirect('admin/pelanggan');
     }
 
     public function show($id){
@@ -57,7 +57,7 @@ class PegawaiPelangganController extends Controller{
 
     public function edit($id){
         if(!PegawaiController::getPegawai()){
-            return redirect('pegawai/login');
+            return redirect('admin/login');
         }
         $pegawai = PegawaiController::getPegawai();
         $pelanggan = Pelanggan::where('id_pelanggan', $id)->get();
@@ -73,7 +73,7 @@ class PegawaiPelangganController extends Controller{
             'updated_at' => date("Y-m-d H:i:s")
         ];
         Pelanggan::where('id_pelanggan', $id)->update($data);
-        return redirect('pegawai/pelanggan');
+        return redirect('admin/pelanggan');
     }
 
     public function destroy($id){
@@ -87,6 +87,6 @@ class PegawaiPelangganController extends Controller{
         }
 
         Pelanggan::where('id_pelanggan', $id)->delete();
-        return redirect('pegawai/pelanggan');
+        return redirect('admin/pelanggan');
     }
 }

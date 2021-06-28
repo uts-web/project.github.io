@@ -40,7 +40,7 @@
                         <div class="login-content card">
                             <div class="login-form">
                                 <h4>Register</h4>
-                                <form method="POST" action="{{URL('pegawai/register')}}" enctype="multipart/form-data">
+                                <form method="POST" action="{{URL('admin/register')}}" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
                                         <label>Name</label>

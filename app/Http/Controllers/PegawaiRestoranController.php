@@ -13,7 +13,7 @@ class PegawaiRestoranController extends Controller {
 
     public function index(){
         if(!PegawaiController::getPegawai()){
-            return redirect('pegawai/login');
+            return redirect('admin/login');
         }
         $pegawai = PegawaiController::getPegawai();
         $restoran = Restoran::all();
@@ -22,7 +22,7 @@ class PegawaiRestoranController extends Controller {
 
     public function create(){
         if(!PegawaiController::getPegawai()){
-            return redirect('pegawai/login');
+            return redirect('admin/login');
         }
         $pegawai = PegawaiController::getPegawai();
         return view('pegawai.restoran.create', compact('pegawai'));
@@ -41,7 +41,7 @@ class PegawaiRestoranController extends Controller {
             'updated_at' => date("Y-m-d H:i:s")
         ];
         Restoran::insert($data);
-        return redirect('pegawai/restoran');
+        return redirect('admin/restoran');
     }
 
     public function show($id){
@@ -65,7 +65,7 @@ class PegawaiRestoranController extends Controller {
         ];
 
         Restoran::where('id_restoran', $id)->update($data);
-        return redirect('pegawai/restoran');
+        return redirect('admin/restoran');
     }
 
     public function destroy($id){
@@ -79,6 +79,6 @@ class PegawaiRestoranController extends Controller {
         }
         Pemesanan::where('id_restoran', $id)->delete();
         Restoran::where('id_restoran', $id)->delete();
-        return redirect('pegawai/restoran');
+        return redirect('admin/restoran');
     }
 }

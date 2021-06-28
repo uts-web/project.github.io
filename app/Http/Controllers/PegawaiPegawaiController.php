@@ -80,6 +80,6 @@ class PegawaiPegawaiController extends Controller {
 
     public function destroy($id){
         Pegawai::where('id_pegawai', '=', $id)->delete();
-        return redirect('pegawai/pegawai');
+        return redirect('admin/pegawai');
     }
 }
