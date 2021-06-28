@@ -24,6 +24,9 @@ class CreateTbPegawaiTable extends Migration
             $table->string('remember_token');
             $table->timestamps();
         });
+        DB::statement("ALTER TABLE tb_pegawai ALTER COLUMN jabatan_pegawai TYPE ENUM('Admin', 'Super Admin') SET DEFAULT 'Admin';");
+        DB::statement("ALTER TABLE tb_pegawai ALTER COLUMN remember_token TYPE VARCHAR(255) SET NULL;");
+        DB::statement("ALTER TABLE tb_pegawai ALTER COLUMN foto_pegawai TYPE VARCHAR(255) SET NULL;");
     }
 
     /**
