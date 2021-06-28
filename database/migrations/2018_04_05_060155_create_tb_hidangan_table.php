@@ -21,8 +21,7 @@ class CreateTbHidanganTable extends Migration
             $table->string('foto_hidangan');
             $table->timestamps();
         });
-        DB::statement("ALTER TABLE tb_hidangan ALTER COLUMN jenis_hidangan TYPE ENUM('Makanan', 'Minuman') SET NULL;");
-        DB::statement("ALTER TABLE tb_hidangan ALTER COLUMN foto_hidangan TYPE VARCHAR(255) SET NULL;");
+     
     }
 
     /**
