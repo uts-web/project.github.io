@@ -27,6 +27,10 @@ class CreateTbReservasiTable extends Migration
             $table->foreign('id_pelanggan')->references('id_pelanggan')->on('tb_pelanggan');
             $table->foreign('id_pegawai')->references('id_pegawai')->on('tb_pegawai');
         });
+        DB::statement("ALTER TABLE tb_reservasi ALTER COLUMN id_pegawai TYPE INT(10) unsigned DEFAULT 0;");
+        DB::statement("ALTER TABLE tb_reservasi ALTER COLUMN status_reservasi TYPE ENUM('Selesai', 'Batal', 'Sedang Berlangsung', 'Menunggu Konfirmasi', 'Dikonfirmasi') SET DEFAULT 'Menunggu Konfirmasi';");
+        DB::statement("ALTER TABLE tb_reservasi ALTER COLUMN no_meja_reservasi TYPE VARCHAR(255) DEFAULT NULL;");
+        DB::statement("ALTER TABLE tb_reservasi ALTER COLUMN deleted TYPE INT(1) SET DEFAULT 0;");
     }
 
     /**
