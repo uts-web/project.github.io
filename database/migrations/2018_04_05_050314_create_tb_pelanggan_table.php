@@ -23,8 +23,8 @@ class CreateTbPelangganTable extends Migration
             $table->string('remember_token');
             $table->timestamps();
         });
-        DB::statement("ALTER TABLE tb_pelanggan MODIFY remember_token VARCHAR(255) DEFAULT NULL;");
-        DB::statement("ALTER TABLE tb_pelanggan MODIFY foto_pelanggan VARCHAR(255) DEFAULT NULL;");
+        DB::statement("ALTER TABLE tb_pelanggan ALTER COLUMN remember_token TYPE VARCHAR(255) DEFAULT NULL;");
+        DB::statement("ALTER TABLE tb_pelanggan ALTER COLUMN foto_pelanggan TYPE VARCHAR(255) DEFAULT NULL;");
     }
 
     /**
