@@ -26,8 +26,6 @@ class CreateTbPemesananTable extends Migration
             $table->foreign('id_pelanggan')->references('id_pelanggan')->on('tb_pelanggan');
             $table->foreign('id_pegawai')->references('id_pegawai')->on('tb_pegawai');
         });
-        DB::statement("ALTER TABLE tb_pemesanan MODIFY total_pemesanan INT(10) DEFAULT 0;");
-        DB::statement("ALTER TABLE tb_pemesanan MODIFY status_pemesanan ENUM('Belum Dibayar', 'Lunas') DEFAULT 'Belum Dibayar';");
     }
 
     /**
