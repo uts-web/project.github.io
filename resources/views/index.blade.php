@@ -225,73 +225,7 @@
                     <h3 class="display-4" style="font-size: 30px;margin-bottom: 30px">
                         @if($islogin['login']=='pelanggan'||$islogin['login']=='pegawai')
                             Profil
-                        @else
-                            Sign Up
-                        @endif
-                    </h3>
-                    @if($islogin['login']=='pelanggan'||$islogin['login']=='pegawai')
-                        @if($islogin['login']=='pelanggan')
-                            <div class="card">
-                              <img class="card-img-top" src="{{ asset('images/profil/'.$pelanggan['foto_pelanggan']) }}" style="width: 50%">
-                              <div class="card-body">
-                                <h4 class="card-title">{{$pelanggan['nama_pelanggan']}}</h4>
-                                <p class="card-text">{{$pelanggan['email_pelanggan']}} - {{$pelanggan['username_pelanggan']}}</p>
-                                <a href="{{URL('pelanggan/reservasi/create')}}" class="btn btn-primary">Pesan</a>
-                              </div>
-                            </div>
-                        @else
-                            <div class="card">
-                              <img class="card-img-top" src="{{ asset('images/profil/'.$pegawai['foto_pegawai']) }}" style="width: 50%">
-                              <div class="card-body">
-                                <h4 class="card-title">{{$pegawai['nama_pegawai']}}</h4>
-                                <p class="card-text">{{$pegawai['email_pegawai']}} - {{$pegawai['username_pegawai']}}</p>
-                                <a href="{{URL('pegawai')}}" class="btn btn-primary">Dashboard</a>
-                              </div>
-                            </div>
-                        @endif
-                    @else
-                    <form action="{{URL('pelanggan/register')}}" method="post" enctype="multipart/form-data">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-3">Name</label>
-                            <div class="col-md-9">
-                                <input id="name" name="name" class="form-control" placeholder="Name" type="text"required>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="email" class="col-md-3">Email</label>
-                            <div class="col-md-9">
-                                <input id="email" name="email" class="form-control" placeholder="Email" type="email" required>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="username" class="col-md-3">Username</label>
-                            <div class="col-md-9">
-                                <input id="username" name="username" class="form-control" placeholder="Username" type="text" required>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="password" class="col-md-3">Password</label>
-                            <div class="col-md-9">
-                                <input id="password" name="password" class="form-control" placeholder="Password" type="password" required>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="foto_pelanggan" class="col-md-3">Foto</label>
-                            <div class="col-md-9">
-                                <input id="foto_pelanggan" class="form-control" type="file" name="foto_pelanggan" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input class="btn btn-primary" value="Sign Up" type="submit"><br />
-                        </div>
-                        <p>Already have an account? <a href="{{URL('pelanggan/login')}}"><p>Sign in</p></a></p>
-                    </form>
-                    @endif
-                </div>
-            </div>
-        </div>
+                      
 
         <div id="team" class="col-md-12" style="background-image:url({{ asset('resto/images/res_img_6.jpg')}});background-size: cover;padding-bottom: 20px">
             <div class="container">
