@@ -1,6 +1,8 @@
+<p align="center">
 ```
 PEMROGRAMAN WEB
 ```
+</p>
 
 <p>201910370311227 - Moch. Apriyanto Mahaliyan</p>
 <p>201910370311228 - Ardana Firmansyah</p>
