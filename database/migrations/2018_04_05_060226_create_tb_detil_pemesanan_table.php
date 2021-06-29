@@ -21,8 +21,8 @@ class CreateTbDetilPemesananTable extends Migration
             $table->unsignedInteger('total_harga_hidangan');
             $table->timestamps();
 
-            $table->foreign('id_pemesanan')->references('id_pemesanan')->on('tb_pemesanan');
-            $table->foreign('id_hidangan')->references('id_hidangan')->on('tb_hidangan');
+            // $table->foreign('id_pemesanan')->references('id_pemesanan')->on('tb_pemesanan');
+            // $table->foreign('id_hidangan')->references('id_hidangan')->on('tb_hidangan');
         });
     }
 
