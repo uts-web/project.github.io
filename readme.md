@@ -1,9 +1,7 @@
-UAS Pemrograman Web
+```
+PEMROGRAMAN WEB
+```
 
-By :
-
-Moch. Apriyanto Mahaliyan   (2019-227)
-
-Ardana Firmansyah           (2019-228)
-
-Noval Maulana Ibrahim       (2019-250)
+<p>201910370311227 - Moch. Apriyanto Mahaliyan</p>
+<p>201910370311228 - Ardana Firmansyah</p>
+<p>201910370311250 - Noval Maulana Ibrahim</p>
